@@ -1,9 +1,9 @@
 'use client'
 import Input from "@/components/atoms/Input";
-import { Text,Image } from "@/components/atoms";
+import { Text, Image } from "@/components/atoms";
 import { HeaderLanding } from "@/components/organisms";
 import dynamic from 'next/dynamic'
-import { FaqLanding, PageOrgTen,FooterLanding } from "@/components/organisms";
+import { FaqLanding, PageOrgTen, FooterLanding } from "@/components/organisms";
 import withLazyLoad from "@/components/organisms/withLazy";
 const PageOrgOne = dynamic(() => import('@/components/organisms/Landing/PageOrgOne'))
 const PageOrgTwo = dynamic(() => import('@/components/organisms/Landing/PageOrgTwo'))
@@ -15,15 +15,15 @@ const PageOrgSeven = dynamic(() => import('@/components/organisms/Landing/PageOr
 const PageOrgEight = dynamic(() => import('@/components/organisms/Landing/pageOrgEight'))
 const PageOrgNine = dynamic(() => import('@/components/organisms/Landing/pageOrgNine'))
 
-const LazyPageOrgOne=withLazyLoad(PageOrgOne)
-const LazyPageOrgTwo=withLazyLoad(PageOrgTwo)
-const LazyPageOrgThree=withLazyLoad(PageOrgThree)
-const LazyPageOrgFour=withLazyLoad(PageOrgFour)
-const LazyPageOrgFive=withLazyLoad(PageOrgFive)
-const LazyPageOrgSix=withLazyLoad(PageOrgSix)
-const LazyPageOrgSeven=withLazyLoad(PageOrgSeven)
-const LazyPageOrgEight=withLazyLoad(PageOrgEight)
-const LazyPageOrgNine=withLazyLoad(PageOrgNine)
+const LazyPageOrgOne = withLazyLoad(PageOrgOne)
+const LazyPageOrgTwo = withLazyLoad(PageOrgTwo)
+const LazyPageOrgThree = withLazyLoad(PageOrgThree)
+const LazyPageOrgFour = withLazyLoad(PageOrgFour)
+const LazyPageOrgFive = withLazyLoad(PageOrgFive)
+const LazyPageOrgSix = withLazyLoad(PageOrgSix)
+const LazyPageOrgSeven = withLazyLoad(PageOrgSeven)
+const LazyPageOrgEight = withLazyLoad(PageOrgEight)
+const LazyPageOrgNine = withLazyLoad(PageOrgNine)
 export default function Home() {
   return (
     <div className="bg-light-gray h-screen overflow-auto ">
@@ -32,9 +32,10 @@ export default function Home() {
       <div className="">
         <LazyPageOrgOne />
         <div className="lg:p-5 p-0">
-        <LazyPageOrgTwo />
-        <LazyPageOrgThree />
+          <LazyPageOrgTwo />
+
         </div>
+        <LazyPageOrgThree />
         <LazyPageOrgFour />
         <LazyPageOrgFive />
         <LazyPageOrgSix />
@@ -44,13 +45,13 @@ export default function Home() {
         <FaqLanding />
         <PageOrgTen />
         <div className="flex justify-center py-12">
-          <Image src={'/landing/logo.svg'} width={800}/>
+          <Image src={'/landing/logo.svg'} width={800} />
         </div>
-        <FooterLanding/>
+        <FooterLanding />
 
         <Text className="text-black !text-[18px]  sf-pro pt-8 pb-6" align="center">
-                All rights reserved | Afrofina  2023
-            </Text>
+          All rights reserved | Afrofina  2023
+        </Text>
       </div>
     </div>
   );
