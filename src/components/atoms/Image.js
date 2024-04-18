@@ -1,6 +1,6 @@
 import Image from 'next/image'
 const ImageAtom = ({ src, alt ,width,height,className,onClick}) => {
-    return <Image src={src} alt={alt} width={width} height={height} className={className} onClick={onClick}/>;
+    return <img src={src} alt={alt} width={width} height={height} className={className} onClick={onClick}/>;
 };
 ImageAtom.defaultProps={
     width:30,
