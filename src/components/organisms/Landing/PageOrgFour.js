@@ -11,7 +11,7 @@ export default function PageOrgFour() {
     }, [])
     useEffect(() => {
         setSelectedOption(data[0])
-    }, [data])
+    }, [])
     return (
         <div className='pt-12 bg-white '>
             <div className='relative'>
