@@ -11,7 +11,7 @@ export default function PageOrgOne() {
                     prev={() => {/* Do other stuff */ }}
                 >
                     <div className='relative'>
-                        <Image src={"/landing/PageOrgOne/first.svg"} width={921} height={600} className={"w-full"} />
+                        <Image src={"/landing/PageOrgOne/first.svg"} width={921} height={600} className={"w-full"} priority/>
                         <Card mainClass="absolute bottom-0 border-l-2 border-white pl-3 ml-14 mb-8 space-y-4"
                             header="Shop for loved ones"
                             description="Put a smile on the faces of people you love by sending them gifts with Afrofina, "
@@ -25,7 +25,7 @@ export default function PageOrgOne() {
                         />
                     </div>
                     <div className='relative'>
-                        <Image src={"/landing/PageOrgOne/second.svg"} width={921} height={600} className={"w-full"} />
+                        <Image src={"/landing/PageOrgOne/second.svg"} width={921} height={600} className={"w-full"} priority/>
                         <Card mainClass="absolute bottom-0 border-l-2 border-white pl-3 ml-14 mb-8 space-y-4"
                             header="Home delivery"
                             description="Get your package delivered right to your door step with Afrofina shipping."
@@ -38,7 +38,7 @@ export default function PageOrgOne() {
                         />
                     </div>
                     <div className='relative'>
-                        <Image src={"/landing/PageOrgOne/third.svg"} width={921} height={600} className={"w-full"} />
+                        <Image src={"/landing/PageOrgOne/third.svg"} width={921} height={600} className={"w-full"} priority/>
                         <Card mainClass="absolute bottom-0 border-l-2 border-white pl-3 ml-14 mb-8 space-y-4"
                             header="Grocery Shopping"
                             description="Buy groceries for yourself and your loved ones in different cities with afrofina."
