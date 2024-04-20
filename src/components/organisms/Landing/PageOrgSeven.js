@@ -2,7 +2,7 @@ import React from 'react'
 import { Text } from '@/components/atoms'
 export default function PageOrgSeven() {
     return (
-        <div className='pt-24 p-5'>
+        <div className='pt-24 p-5 animate-slide-in'>
             <div className='flex justify-center'>
                 <Text className="lg:!text-[40px] !text-[20px] text-black custom-font !tracking-widest w-9/12 px-10 pb-12">
                     Get the most out of afrofina, watch this video to know  how you can utilize the full potential of Afrofina.
