@@ -1,6 +1,6 @@
 
 import Input from "@/components/atoms/Input";
-import { Text, Image } from "@/components/atoms";
+import { Text, Image ,AnimatedElement} from "@/components/atoms";
 import { HeaderLanding } from "@/components/organisms";
 import { PageOrgOne, PageOrgTwo, PageOrgThree, PageOrgFour, PageOrgFive, PageOrgSix, PageOrgSeven, PageOrgEight, PageOrgNine, FaqLanding, PageOrgTen, FooterLanding } from "@/components/organisms";
 export default function Home() {
@@ -24,7 +24,9 @@ export default function Home() {
         <FaqLanding />
         <PageOrgTen />
         <div className="flex justify-center py-12">
+        <AnimatedElement>
           <Image src={'/landing/logo.svg'} width={800} />
+          </AnimatedElement>
         </div>
         <FooterLanding />
 

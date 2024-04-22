@@ -1,11 +1,15 @@
 import React from 'react'
-import { Text, Input, Button } from '@/components/atoms'
+import { Text, Input, Button, AnimatedElement } from '@/components/atoms'
 export default function footer() {
     return (
         <div className='lg:border border-y border-primary grid lg:grid-cols-3 grid-cols-1'>
             <div>
+
                 <Text className="text-black !text-[24px] custom-font !tracking-widest border-b border-primary py-2 pl-[38%]" align="left">
-                    Helpful Links
+                    <AnimatedElement>
+                        Helpful Links
+
+                    </AnimatedElement>
                 </Text>
                 <div className='py-5 space-y-5'>
                     <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
@@ -19,7 +23,10 @@ export default function footer() {
             </div>
             <div className='lg:border-x border-x-0 lg:border-y-0 border-y border-primary'>
                 <Text className="text-black !text-[24px] custom-font !tracking-widest border-b border-primary py-2 pl-[38%]" align="left">
-                    Shipping
+                    <AnimatedElement>
+                        Shipping
+
+                    </AnimatedElement>
                 </Text>
                 <div className='py-5 space-y-5'>
                     <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
@@ -33,7 +40,9 @@ export default function footer() {
             </div>
             <div className='flex flex-col items-center justify-center lg:py-0 py-5'>
                 <Text className="text-black !text-[24px] custom-font !tracking-widest py-2" align="left">
-                    Newsletter
+                    <AnimatedElement>
+                        Newsletter
+                    </AnimatedElement>
                 </Text>
                 <Text className="text-black !text-[18px]  sf-pro" align="left">
                     Subscribe for feature updates , promos and more
