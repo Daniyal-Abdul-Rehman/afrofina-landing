@@ -11,8 +11,8 @@ export default function PageOrgSix() {
                 <AnimatedElement>
                     <Card header="Get the royal treatment at Afrofina, "
                         description="Track your packages with afrofina, afrofina tracking tells you exactly 
-                     where your packages are the status of the shipping, and more, 
-                     simply enter your package tracking ID to start tracking."
+                        where your packages are the status of the shipping, and more, 
+                        simply enter your package tracking ID to start tracking."
                         buttonText="Track package"
                         descriptionClass='text-black sf-pro lg:!text-[20px] !text-[12px]'
                         isBorderd={false}
@@ -31,8 +31,8 @@ export default function PageOrgSix() {
                         headerClass='text-white custom-font  !tracking-widest lg:!text-[40px] !text-[20px]'
                         descriptionClass='text-white sf-pro lg:!text-[20px] !text-[12px]'
                         description="Track your packages with afrofina, afrofina tracking tells you exactly 
-                    where your packages are the status of the shipping, and more, 
-                    simply enter your package tracking ID to start tracking."
+                        where your packages are the status of the shipping, and more, 
+                        simply enter your package tracking ID to start tracking."
                         buttonText="Track package"
                         isButtonIcon={true} buttonIcon={'/rightIconPurple.svg'}
                         buttonClass='bg-white px-5 text-[#63257B] rounded-full py-2 flex items-center'

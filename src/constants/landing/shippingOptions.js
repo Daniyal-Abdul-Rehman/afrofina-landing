@@ -3,7 +3,7 @@ const options = [{
     data: {
         heading: 'U-cargo Agent',
         description: 'Earn while you travel',
-        image: '/landing/PageOrgFour/first.svg',
+        image: '/landing/PageOrgThree/fourth.svg',
         description2: "Earn money with afrofina, Become a U-cargo agent  and get paid  to delivery packages while you travel.",
         list: ['Create a listing ', 'Add where you are traveling to and where you traveling from ', 'Add weight of package you would like to pick-up', 'Add pick-up methods ', 'Add amount you would like to be paid for the delivery '],
         buttonText: 'I want to become an agent'

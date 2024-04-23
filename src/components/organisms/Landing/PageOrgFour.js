@@ -39,21 +39,21 @@ export default function PageOrgFour() {
                         <Image src={selectedOption?.data?.image} width={451} height={444} />
                         <div className='absolute h-full w-full top-[40%] left-0 flex flex-col items-end pr-10'>
                             <AnimatedElement>
-                            <Card mainClass="border-l-4 border-primary mb-8 space-y-4 bg-white py-4 flex flex-col items-center  rounded-lg w-[358px]"
-                                header={selectedOption?.data?.heading}
-                                description={selectedOption?.data?.description}
-                                isButton={false}
-                                isBorderd={false}
-                                headerClass="text-black"
-                                descriptionClass="text-black"
-                                bgColor="bg-none"
-                            />
+                                <Card mainClass="border-l-4 border-primary mb-8 space-y-4 bg-white py-4 flex flex-col items-center  rounded-lg w-[358px]"
+                                    header={selectedOption?.data?.heading}
+                                    description={selectedOption?.data?.description}
+                                    isButton={false}
+                                    isBorderd={false}
+                                    headerClass="text-black"
+                                    descriptionClass="text-black"
+                                    bgColor="bg-none"
+                                />
                             </AnimatedElement>
                         </div>
                     </div>
                     <div className='col-span-4'>
                         <AnimatedElement>
-                        <Text className={'text-left text-black py-12 border-y border-primary px-8'} align="left">{selectedOption?.data?.description2}</Text>
+                            <Text className={'text-left text-black py-12 border-y border-primary px-8'} align="left">{selectedOption?.data?.description2}</Text>
                         </AnimatedElement>
                         <div className='pl-12 pt-14'>
                             <AnimatedElement>
@@ -64,17 +64,17 @@ export default function PageOrgFour() {
 
                             </AnimatedElement>
                             <AnimatedElement>
-                            <div className='space-y-4 pt-10 '>
-                                {selectedOption?.data?.list?.map((listItem,) => (
-                                    <Text align="left">
-                                        {listItem}
-                                    </Text>
-                                ))}
-                                <Button isIcon={true} iconSrc={'/rightIconPrimary.svg'}
-                                >
-                                    {selectedOption?.data?.buttonText}
-                                </Button>
-                            </div>
+                                <div className='space-y-4 pt-10 '>
+                                    {selectedOption?.data?.list?.map((listItem,) => (
+                                        <Text align="left">
+                                            {listItem}
+                                        </Text>
+                                    ))}
+                                    <Button isIcon={true} iconSrc={'/rightIconPrimary.svg'}
+                                    >
+                                        {selectedOption?.data?.buttonText}
+                                    </Button>
+                                </div>
                             </AnimatedElement>
                         </div>
                     </div>
