@@ -14,7 +14,7 @@ const options = [{
     data: {
         heading: 'U-cargo Shipper',
         description: 'Fast and cheap delivery',
-        image: '/landing/PageOrgFour/second.svg',
+        image: '/landing/PageOrgThree/fifth.svg',
         description2: "Need to send packages urgently get a u-cargo agent traveling to package destination to deliver it fast and at a cheap rate.",
         list: ['Search for u-cargo agents traveling to package destination ', 'Pick a u-cargo agent that matches your needs (weight, price etc.) ', 'Book agent and chat with agent ', 'Select preferred pick-up method', 'Pay and get your package delivered '],
         buttonText: 'I want to send a package'
@@ -25,7 +25,7 @@ const options = [{
     data: {
         heading: 'Standard shipping',
         description: 'Send packages across the globe.',
-        image: '/landing/PageOrgFour/third.svg',
+        image: '/landing/PageOrgThree/sixth.svg',
         description2: "Send packages of all weight sizes  across the globe fast and easy with our standard shipping.",
         list: ['Describe your package (weight, length, width)', 'Choose a method for shipping depending on how fast you want package shipped ', 'Get a quote based on weight and destination ', 'Book shipping ', 'Get package picked up or deliver at out terminal and get it shipped'],
         buttonText: 'Get a quote'
