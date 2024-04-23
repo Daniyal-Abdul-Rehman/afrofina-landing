@@ -44,7 +44,7 @@ Card.defaultProps = {
     header: 'Shop with afrofina ',
     description: 'Experience a whole new system of shopping, purchase goods/ products as a retailer or wholesale and send gifts to friends and loved ones.',
     buttonText: 'Shop Now',
-    mainClass: ' p-12 rounded-xl flex flex-col items-center space-y-8',
+    mainClass: ' p-10 rounded-xl flex flex-col items-center space-y-8',
     headerClass: 'custom-font !text-black lg:!text-[40px] !tracking-widest !text-[20px]',
     isBorderd: true,
     borderdClass: 'border border-primary bg-white',

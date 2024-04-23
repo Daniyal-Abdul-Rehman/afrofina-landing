@@ -21,7 +21,7 @@ export default function PageOrgFour() {
                 <div className='flex justify-center space-x-4 pt-6 pb-12'>
                     {data && data?.map((val) => (
                         <AnimatedElement>
-                            <Button handleClick={() => setSelectedOption(val)} className={`${selectedOption?.item === val?.item ? 'bg-dark text-white' : 'border border-dark text-dark'} lg:py-4 py-2 lg:px-4 px-0 w-[260px] rounded-full lg:!text-[20px] !text-[12px]`}>
+                            <Button handleClick={() => setSelectedOption(val)} className={`${selectedOption?.item === val?.item ? 'bg-dark text-white' : 'border border-dark text-dark'} lg:py-4 py-2 lg:px-4 px-0 lg:w-[260px] w-auto rounded-full lg:!text-[20px] !text-[12px]`}>
                                 {val?.item}
 
                             </Button>

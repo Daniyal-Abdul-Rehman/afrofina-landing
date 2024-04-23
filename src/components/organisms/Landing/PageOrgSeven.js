@@ -24,24 +24,21 @@ export default function PageOrgSeven() {
                 </Text>
             </div>
             <AnimatedElement>
-                <div className={`!h-[642px] flex justify-center items-end lg:rounded-xl rounded-none overflow-hidden relative`} style={{ backgroundImage: `url('/shop/story.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className={`lg:!h-[790px] !h-[254px] flex justify-center items-end lg:rounded-xl rounded-none overflow-hidden relative`} >
                     <div className='bg-transparentGray w-full h-full absolute top-0 left-0 z-10 flex justify-center items-center' onClick={toggleVideo}>
-
                         {!isVideoPlaying && <Image src="/play.svg" width={94} height={94} alt={'play'} />}
                     </div>
-                    {/* <video
-                    id="shopVideo"
-                    className={`min-w-full min-h-full object-cover z-0 ${isVideoPlaying ? '' : 'opacity-0 pointer-events-none'}`}
-                    autoPlay
-                    loop={true}
-                    muted
-                >
-                    <source src="/video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video> */}
-                    <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' playing={isVideoPlaying} controls={true} className={`min-w-full min-h-full object-cover z-0`}
+                    <ReactPlayer
+                        url='/background.mp4'
+                        playing={isVideoPlaying}
+                        controls={true}
+                        className={`absolute top-0 left-0 w-full h-full z-0`}
+                        width='100%'
+                        height='100%'
+                        style={{ objectFit: 'cover' }} // Ensure the video covers the entire div
                     />
                 </div>
+
             </AnimatedElement>
         </div>
     )

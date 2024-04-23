@@ -5,7 +5,7 @@ import { TextIcon } from '@/components/molecules'
 export default function Header() {
     return (
         <div className='p-4 flex justify-between px-6 border-b border-primary'>
-            <Image src={"/logo.svg"} width={235} height={32} />
+            <Image src={"/logo.svg"} className={'lg:!w-[235px] w-[104px]'} width={235} height={32} />
             <div className='lg:flex hidden items-center space-x-12'>
                 <Link href={"https://afrofina-user.vercel.app/ecom/shop"}>
                     <Text>
