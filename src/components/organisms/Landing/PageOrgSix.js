@@ -75,7 +75,7 @@ export default function PageOrgSix() {
                 </AnimatedElement>
                 <AnimatedElement>
 
-                    <Image src={'/landing/PageOrgSix/second.svg'} width={686} height={635} className={'w-full rounded-xl lg:block hidden'} />
+                    <Image src={'/landing/PageOrgSix/third.svg'} width={686} height={635} className={'w-full rounded-xl lg:block hidden'} />
 
                 </AnimatedElement>
             </div>
