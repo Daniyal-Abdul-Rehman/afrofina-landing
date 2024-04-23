@@ -24,7 +24,7 @@ export default function PageOrgSix() {
                 <AnimatedElement>
                     <Card header="Tracking  with afrofina "
                         isTextIcon
-                        textIconsIcon={'/landing/PageOrgFive/track.svg'}
+                        textIconsIcon={'/landing/PageOrgThree/track.svg'}
                         isBorderd={false}
                         mainClass='lg:rounded-xl rounded-none flex  flex-col items-center justify-center lg:px-12 px-6 lg:py-12 py-8 space-y-6'
                         bgColor="bg-[#63257B] lg:flex hidden "
@@ -59,7 +59,7 @@ export default function PageOrgSix() {
                 <AnimatedElement>
                     <Card header="Tracking  with afrofina "
                         isTextIcon
-                        textIconsIcon={'/landing/PageOrgFive/track.svg'}
+                        textIconsIcon={'/landing/PageOrgThree/track.svg'}
                         isBorderd={false}
                         mainClass='lg:rounded-xl rounded-none flex  flex-col items-center justify-center lg:px-12 px-6 lg:py-12 py-8 space-y-6'
                         bgColor="bg-[#63257B] lg:hidden flex "
