@@ -1,31 +1,64 @@
 
+'use client'
+import { useRef } from "react";
 import Input from "@/components/atoms/Input";
-import { Text, Image ,AnimatedElement} from "@/components/atoms";
+import { Text, Image, AnimatedElement } from "@/components/atoms";
 import { HeaderLanding } from "@/components/organisms";
 import { PageOrgOne, PageOrgTwo, PageOrgThree, PageOrgFour, PageOrgFive, PageOrgSix, PageOrgSeven, PageOrgEight, PageOrgNine, FaqLanding, PageOrgTen, FooterLanding } from "@/components/organisms";
 export default function Home() {
+  const refShop = useRef(null);
+  const refSell = useRef(null);
+  const refShip = useRef(null);
+  const refPartnerships = useRef(null)
+  const refRoyal = useRef(null);
+  const refTrack = useRef(null);
+  const refHelp = useRef(null);
+  const handleClick = (val) => {
+    console.log(val, refShop)
+    if (val === 'shop') {
+      refShop.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (val === 'sell') {
+      refSell.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (val === 'ship') {
+      refShip.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (val === 'partnerships') {
+      refPartnerships.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (val === 'royal') {
+      refRoyal.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (val === 'track') {
+      refTrack.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (val === 'help') {
+      refHelp.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="bg-light-gray h-screen overflow-auto ">
 
-      <HeaderLanding />
+      <HeaderLanding handleClick={handleClick} />
       <div className="">
         <PageOrgOne />
-        <div className="lg:p-5 p-0">
-          <PageOrgTwo />
+        <div className="lg:p-5 p-0" >
+          <PageOrgTwo refShop={refShop} />
         </div>
 
-        <PageOrgThree />
-        <PageOrgFour />
-        <PageOrgFive />
-        <PageOrgSix />
-        <PageOrgSeven />
+        <PageOrgThree refSell={refSell} />
+        <PageOrgFour refShip={refShip} />
+        <PageOrgFive refPartnerships={refPartnerships}/>
+        <PageOrgSix refRoyal={refRoyal}/>
+        <PageOrgSeven refTrack={refTrack}/>
         <PageOrgEight />
         <PageOrgNine />
-        <FaqLanding />
+        <FaqLanding refHelp={refHelp}/>
         <PageOrgTen />
         <div className="flex justify-center py-12">
-        <AnimatedElement>
-          <Image src={'/landing/logo.svg'} width={800} />
+          <AnimatedElement>
+            <Image src={'/landing/logo.svg'} width={800} />
           </AnimatedElement>
         </div>
         <FooterLanding />

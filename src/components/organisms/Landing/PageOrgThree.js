@@ -1,10 +1,10 @@
 import React from 'react'
 import { Image, AnimatedElement } from '@/components/atoms'
 import { Card } from '@/components/molecules'
-export default function PageOrgThree() {
+export default function PageOrgThree({refSell}) {
   return (
     <AnimatedElement>
-      <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-0 pt-10 animate-slide-in'>
+      <div ref={refSell} className='grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-0 pt-10 animate-slide-in'>
         <Image src={'/landing/PageOrgThree/first.svg'} width={720} height={720} className={'w-full lg:rounded-[20px] rounded-none'} />
         <Card header="Become an Afrofina vendor now."
           isTextIcon

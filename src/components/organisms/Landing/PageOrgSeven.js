@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { AnimatedElement, Text, Image } from '@/components/atoms'
 import ReactPlayer from 'react-player'
-export default function PageOrgSeven() {
+export default function PageOrgSeven({refTrack}) {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
     const toggleVideo = () => {
@@ -13,7 +13,7 @@ export default function PageOrgSeven() {
     };
 
     return (
-        <div className='pt-24 p-5 animate-slide-in'>
+        <div ref={refTrack} className='pt-24 p-5 animate-slide-in'>
             <div className='flex justify-center'>
 
                 <Text className="lg:!text-[40px] !text-[20px] text-black custom-font !tracking-widest w-9/12 px-10 pb-12">

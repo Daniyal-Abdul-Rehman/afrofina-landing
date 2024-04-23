@@ -1,9 +1,9 @@
 import React from 'react'
 import { Image, AnimatedElement } from '@/components/atoms'
 import { Card } from '@/components/molecules'
-export default function PageOrgSix() {
+export default function PageOrgSix({refRoyal}) {
     return (
-        <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-0 pt-12 lg:p-5 p-0 animate-slide-in'>
+        <div ref={refRoyal} className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-0 pt-12 lg:p-5 p-0 animate-slide-in'>
             <div className='lg:space-y-5 space-y-0 pt-4'>
                 <AnimatedElement>
                     <Image src={'/landing/PageOrgThree/second.svg'} width={686} height={635} className={'w-full lg:rounded-xl rounded-none '} />

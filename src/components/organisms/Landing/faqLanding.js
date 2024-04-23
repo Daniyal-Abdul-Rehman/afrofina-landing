@@ -1,9 +1,9 @@
 import React from 'react'
 import { Text, Image, AnimatedElement } from '@/components/atoms'
 import FaqItem from "./faqItem"
-export default function faqLanding() {
+export default function faqLanding({refHelp}) {
     return (
-        <div>
+        <div ref={refHelp}>
             <AnimatedElement>
                 <Text className="text-black lg:!text-[40px] !text-[28px] custom-font !tracking-widest " align="center">
                     Frequently Asked Questions

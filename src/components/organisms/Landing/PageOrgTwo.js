@@ -1,10 +1,10 @@
 import React from 'react'
 import { Image, AnimatedElement } from '@/components/atoms'
 import { Card } from '@/components/molecules'
-export default function PageOrgTwo() {
+export default function PageOrgTwo({refShop}) {
     return (
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-0 pt-12 animate-slide-in'>
+        <div ref={refShop} className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-0 pt-12 animate-slide-in'>
             <div className='lg:space-y-5 space-y-0 pt-4'>
                 <AnimatedElement>
                     <Image src={'/landing/PageOrgTwo/first.png'} width={686} height={543} className={'w-full lg:rounded-xl rounded-none '} />

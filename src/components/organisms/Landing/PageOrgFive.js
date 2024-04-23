@@ -2,9 +2,9 @@ import React from 'react'
 import { Text,Button,AnimatedElement } from '@/components/atoms'
 import { TextIcon } from '@/components/molecules'
 import CompanyCarousel from './companyCarousel'
-export default function PageOrgFive() {
+export default function PageOrgFive({refPartnerships}) {
   return (
-    <div className='pt-24 animate-slide-in'>
+    <div ref={refPartnerships} className='pt-24 animate-slide-in'>
       <div className='flex justify-center pb-12'>
         <div className='lg:w-2/3 w-full lg:px-12 px-4 flex flex-col items-center space-y-12'>
           <AnimatedElement>

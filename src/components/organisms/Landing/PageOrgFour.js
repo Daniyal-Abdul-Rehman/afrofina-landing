@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Text, Image, Button, AnimatedElement } from '@/components/atoms'
 import options from '@/constants/landing/shippingOptions'
 import { Card } from "@/components/molecules"
-export default function PageOrgFour() {
+export default function PageOrgFour({refShip}) {
     const [data, setData] = useState([])
     const [selectedOption, setSelectedOption] = useState({})
     useEffect(() => {
@@ -13,7 +13,7 @@ export default function PageOrgFour() {
         setSelectedOption(data[0])
     }, [data])
     return (
-        <div className='pt-12 bg-white animate-slide-in'>
+        <div ref={refShip} className='pt-12 bg-white animate-slide-in'>
             <div className='relative'>
                 <Text variant="h4" className="!text-black lg:!text-[32px] !text-[24px] custom-font !tracking-widest lg:!font-extralight !font-bold">
                     Afrofina shipping
