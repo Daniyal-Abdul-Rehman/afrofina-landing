@@ -41,7 +41,7 @@ export default function PageOrgSix() {
             </div>
             <div className='lg:space-y-5 space-y-0'>
                 <AnimatedElement>
-                    <Image src={'/landing/PageOrgSix/third.svg'} width={686} height={635} className={'w-full lg:rounded-xl rounded-none lg:hidden block'} />
+                    <Image src={'/landing/PageOrgThree/third.svg'} width={686} height={635} className={'w-full lg:rounded-xl rounded-none lg:hidden block'} />
                 </AnimatedElement>
                 <AnimatedElement>
                     <Card header="Get the royal treatment at Afrofina, "
@@ -75,7 +75,7 @@ export default function PageOrgSix() {
                 </AnimatedElement>
                 <AnimatedElement>
 
-                    <Image src={'/landing/PageOrgSix/third.svg'} width={686} height={635} className={'w-full rounded-xl lg:block hidden'} />
+                    <Image src={'/landing/PageOrgThree/third.svg'} width={686} height={635} className={'w-full rounded-xl lg:block hidden'} />
 
                 </AnimatedElement>
             </div>
