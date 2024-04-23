@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className='p-4 flex justify-between px-6 border-b border-primary'>
             <Image src={"/logo.svg"} width={235} height={32} />
-            <div className='lg:flex hidden items-center space-x-4'>
+            <div className='lg:flex hidden items-center space-x-12'>
                 <Link href={"https://afrofina-user.vercel.app/ecom/shop"}>
                     <Text>
                         Shop
@@ -50,12 +50,13 @@ export default function Header() {
                     </Text>
                 </Link>
                 <Link href={"https://afrofina-user.vercel.app/ecom/auth/sign-up"}>
-                <Button>
-                    Get Started
-                </Button>
+                    <Button className="bg-primary rounded-full flex py-2 px-3">
+
+                        <TextIcon text="Get Started"  iconSrc="/landing/logo-short.svg" textClass="text-black" iconWidth={41} mainClass="flex py-0 items-center space-x-3"/>
+                    </Button>
                 </Link>
             </div>
-            <TextIcon text="Menu" textClass="sf-pro text-black !text-[12px] pr-4 " iconSrc="/landing/burger.svg" iconWidth={24} mainClass="flex lg:hidden flex-row-reverse items-center "/>
+            <TextIcon text="Menu" textClass="sf-pro text-black !text-[12px] pr-4 " iconSrc="/landing/burger.svg" iconWidth={24} mainClass="flex lg:hidden flex-row-reverse items-center " />
         </div>
     )
 }

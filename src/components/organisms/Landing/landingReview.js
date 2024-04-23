@@ -6,9 +6,9 @@ import { Image, Text } from "@/components/atoms";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './landingReviewCarousel.css';
-import SwiperCore, { Navigation } from 'swiper/core';
-
-SwiperCore.use([Navigation]);
+// import SwiperCore, { Navigation,Autoplay } from 'swiper/core';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+// SwiperCore.use([Navigation,Autoplay]);
 
 export default function LandingReviewCarousel({ swiperRef }) {
     const [isShow, setShow] = useState(true);
@@ -30,13 +30,20 @@ export default function LandingReviewCarousel({ swiperRef }) {
             <Swiper
                 ref={swiperRef}
                 slidesPerView={'auto'}
-                loop
+                loop={true}
+                // centeredSlides={true}
+                autoplay={{
+                    delay: 2000,
+                    // disableOnInteraction: false,
+                }}
                 initialSlide={'lastSlide'}
                 spaceBetween={15}
                 grabCursor={true}
-                navigation={false} // Disable Swiper's built-in navigation
+                navigation={true} // Disable Swiper's built-in navigation
                 onReachEnd={handleReachEnd}
                 onReachBeginning={handleReachBeginning}
+
+                modules={[Navigation,Autoplay]}
                 className="landingReviewCarousel relative"
             >
                 {[0, 1, 2, 3, 4, 5].map((index) => (
@@ -45,7 +52,7 @@ export default function LandingReviewCarousel({ swiperRef }) {
                             <Text className="text-black sf-pro lg:!text-[22px] !text-[14px]">
                                 “I’m able to earn while I do what I love most (Travel), love the U-cargo agent feature on afrofina.”
                             </Text>
-                            <TextIcon iconSrc="/landing/pageOrgEight/avatar.svg" iconWidth={55.18} iconClass="lg:w-[55.18px]" text="James Appiah" textClass="lg:!text-[22px] !text-[14px] custom-font text-black !tracking-widest" mainClass="flex items-center lg:space-x-6 space-x-3"/>
+                            <TextIcon iconSrc="/landing/pageOrgEight/avatar.svg" iconWidth={55.18} iconClass="lg:w-[55.18px]" text="James Appiah" textClass="lg:!text-[22px] !text-[14px] custom-font text-black !tracking-widest" mainClass="flex items-center lg:space-x-6 space-x-3" />
                         </div>
                     </SwiperSlide>
                 ))}

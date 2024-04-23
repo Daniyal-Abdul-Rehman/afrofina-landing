@@ -7,6 +7,7 @@ export default function PageOrgEight() {
     const swiperRef = useRef(null);
 
     const goNext = () => {
+        console.log('sw',swiperRef.current.swiper.slideNext())
         if (swiperRef.current && swiperRef.current.swiper) {
             swiperRef.current.swiper.slideNext();
         }
