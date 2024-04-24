@@ -14,6 +14,12 @@
   src: url('./font/CustomFont.woff') format('woff');
   /* You can include more font formats if necessary */
 }
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./font/ClashDisplay-Regular.woff') format('woff');
+  /* You can include more font formats if necessary */
+}
+
 
 @font-face {
   font-family: 'SFPro';
@@ -34,6 +40,10 @@
   font-weight: 400 !important;
 }
 
+.clash-display {
+  font-family: 'ClashDisplay', sans-serif !important;
+  font-weight: 400 !important;
+}
 .sf-pro {
   font-family: 'SFPro', sans-serif !important;
 }
