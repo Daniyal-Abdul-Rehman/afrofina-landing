@@ -6,7 +6,7 @@ import { TextIcon } from '@/components/molecules'
 export default function Header({ handleClick }) {
     return (
         <div className='p-4 flex justify-between sticky top-0 z-[999999] bg-white px-6 border-b border-primary'>
-            <Image src={"/logo.svg"} className={'lg:!w-[235px]!w-[104px]'} width={235} height={32} />
+            <Image src={"/logoMain.png"} className={'lg:w-[235px] w-[104px]'} width={235} height={32} />
             <div className='lg:flex hidden items-center space-x-12'>
                 <Text className='text-black cursor-pointer' onClick={() => handleClick('shop')}>
                     Shop
@@ -57,7 +57,7 @@ export default function Header({ handleClick }) {
                     <ul className="menu p-4 w-full bg-[#63257B] h-screen overflow-hidden text-base-content flex flex-col">
 
                         <div className='flex justify-between items-center pb-12 w-full'>
-                            <Image src={"/logoWhite.svg"} className={'lg:!w-[235px] !w-[154px]'} width={154} height={32} />
+                            <Image src={"/logoWhite.png"} className={'lg:w-[235px] w-[154px]'} width={154} height={32} />
                             <label htmlFor="my-drawer-4" aria-label="close sidebar">
                                 <TextIcon text="Close" textClass="sf-pro text-white !text-[12px] pr-4 " iconSrc="/closeWhite.svg" iconWidth={24} mainClass="flex drawer-overlay items-center flex-row-reverse" />
                             </label>
