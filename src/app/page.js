@@ -1,10 +1,14 @@
 
 'use client'
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import dynamic from 'next/dynamic'
 import Input from "@/components/atoms/Input";
+
 import { Text, Image, AnimatedElement } from "@/components/atoms";
 import { HeaderLanding } from "@/components/organisms";
-import { PageOrgOne, PageOrgTwo, PageOrgThree, PageOrgFour, PageOrgFive, PageOrgSix, PageOrgSeven, PageOrgEight, PageOrgNine, FaqLanding, PageOrgTen, FooterLanding } from "@/components/organisms";
+import { PageOrgOne, PageOrgTwo, PageOrgThree, PageOrgFour, PageOrgFive, PageOrgSix, PageOrgEight, PageOrgNine, FaqLanding, PageOrgTen, FooterLanding } from "@/components/organisms";
+const PageOrgSeven = dynamic(() => import('../components/organisms/Landing/PageOrgSeven'))
+
 export default function Home() {
   const refShop = useRef(null);
   const refSell = useRef(null);
@@ -37,6 +41,9 @@ export default function Home() {
       refHelp.current?.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  useEffect(()=>{
+    localStorage.setItem('isVideoPlaying',true)
+  },[])
   return (
     <div className="bg-light-gray h-screen overflow-auto ">
 
@@ -51,7 +58,7 @@ export default function Home() {
         <PageOrgFour refShip={refShip} />
         <PageOrgFive refPartnerships={refPartnerships}/>
         <PageOrgSix refRoyal={refRoyal}/>
-        <PageOrgSeven refTrack={refTrack}/>
+        <PageOrgSeven refTrack={refTrack} playing={true}/>
         <PageOrgEight />
         <PageOrgNine />
         <FaqLanding refHelp={refHelp}/>
