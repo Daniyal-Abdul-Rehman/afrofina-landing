@@ -65,7 +65,7 @@ export default function Home() {
         <PageOrgTen />
         <div className="flex justify-center py-12">
           <AnimatedElement>
-            <Image src={'/landing/logo.svg'} width={800} />
+            <Image src={'/logoMain.png'} width={800} />
           </AnimatedElement>
         </div>
         <FooterLanding />
