@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { AnimatedElement, Text, Image } from '@/components/atoms'
 import ReactPlayer from 'react-player'
 export default function PageOrgSeven({refTrack}) {
-    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+    const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
     const toggleVideo = () => {
 

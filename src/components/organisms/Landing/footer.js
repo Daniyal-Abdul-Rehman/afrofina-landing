@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, Input, Button, AnimatedElement } from '@/components/atoms'
+import Link from 'next/link'
 export default function footer() {
     return (
         <div className='lg:border border-y border-primary grid lg:grid-cols-3 grid-cols-1'>
@@ -12,12 +13,26 @@ export default function footer() {
                     </AnimatedElement>
                 </Text>
                 <div className='py-5 space-y-5'>
+
                     <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
-                        Become a partner
-                    </Text> <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
-                        Become a u-cargo agent
-                    </Text> <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
-                        Join the royals
+                        <Link href={'#'}>
+                            Become a partner
+
+                        </Link>
+                    </Text>
+
+                    <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
+                        <Link href={'#'}>
+                            Become a u-cargo agent
+
+                        </Link>
+                    </Text>
+                    <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
+
+                        <Link href={'#'}>
+                            Join the royals
+
+                        </Link>
                     </Text>
                 </div>
             </div>
@@ -29,12 +44,26 @@ export default function footer() {
                     </AnimatedElement>
                 </Text>
                 <div className='py-5 space-y-5'>
+
                     <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
-                        Track a package
-                    </Text> <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
-                        Ship a package
-                    </Text> <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
-                        U-cargo shipping
+                        <Link href={'#'}>
+                            Track a package
+
+                        </Link>
+                    </Text>
+
+                    <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
+                        <Link href={'#'}>
+                            Ship a package
+
+                        </Link>
+                    </Text>
+
+                    <Text className="text-black !text-[18px]  pl-[38%] sf-pro" align="left">
+                        <Link href={'#'}>
+                            U-cargo shipping
+
+                        </Link>
                     </Text>
                 </div>
             </div>

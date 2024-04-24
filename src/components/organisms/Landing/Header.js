@@ -50,20 +50,20 @@ export default function Header({ handleClick }) {
                 <div className="drawer-content">
                     {/* Page content here */}
 
-                    <label htmlFor="my-drawer-4" className="drawer-butto"><TextIcon text="Menu" textClass="sf-pro text-black !text-[12px] pr-4 " iconSrc="/landing/burger.svg" iconWidth={24} mainClass="flex lg:hidden flex-row-reverse items-center " />
+                    <label htmlFor="my-drawer-4" className="drawer-button"><TextIcon text="Menu" textClass="sf-pro text-black !text-[12px] pr-4 " iconSrc="/landing/burger.svg" iconWidth={24} mainClass="flex lg:hidden flex-row-reverse items-center " />
                     </label>
                 </div>
                 <div className="drawer-side z-[999999]">
-                    <ul className="menu p-4 w-full bg-[#63257B] h-screen overflow-hidden text-base-content">
+                    <ul className="menu p-4 w-full bg-[#63257B] h-screen overflow-hidden text-base-content flex flex-col">
 
-                        <div className='flex justify-between items-center pb-12'>
-                            <Image src={"/logoWhite.svg"} className={'lg:!w-[235px] w-[154px]'} width={235} height={32} />
+                        <div className='flex justify-between items-center pb-12 w-full'>
+                            <Image src={"/logoWhite.svg"} className={'lg:!w-[235px] w-[154px]'} width={154} height={32} />
                             <label htmlFor="my-drawer-4" aria-label="close sidebar">
                                 <TextIcon text="Close" textClass="sf-pro text-white !text-[12px] pr-4 " iconSrc="/closeWhite.svg" iconWidth={24} mainClass="flex drawer-overlay items-center flex-row-reverse" />
                             </label>
                         </div>
                         {/* Sidebar content here */}
-                        <div className='pl-12 space-y-2' htmlFor="my-drawer-4" aria-label="close sidebar">
+                        <div className='pl-12 space-y-2 w-full' htmlFor="my-drawer-4" aria-label="close sidebar">
                             <Text className='text-white !font-light cursor-pointer clash-display !text-[32px]' align="left" onClick={() => handleClick('shop')}>
                                 <label htmlFor="my-drawer-4" aria-label="close sidebar">
 
